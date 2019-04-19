@@ -60,6 +60,7 @@ else
     endif
   endif
 endif
+export CONFIG_SND_SOC_AW87319=y
 
 # Use USERINCLUDE when you must reference the UAPI directories only.
 USERINCLUDE     += \
