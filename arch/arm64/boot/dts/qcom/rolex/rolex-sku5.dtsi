@@ -284,6 +284,9 @@ qrd_batterydata: qcom,battery-data {
 
 	};
 
+&apps_iommu {
+	qcom,no-aarch64;
+
 };
 &rpm_bus {
 	rpm-regulator-ldoa6 {
