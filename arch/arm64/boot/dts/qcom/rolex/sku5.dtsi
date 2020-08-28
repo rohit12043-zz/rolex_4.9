@@ -58,8 +58,13 @@ qrd_batterydata: qcom,battery-data {
 		#include "batterydata-wingtech-xingwangda_ATL-4v4-3030mah.dtsi"
 
 	};
-
 };
+
+&apps_iommu {
+	qcom,no-aarch64;
+};
+
+
 &rpm_bus {
 	rpm-regulator-ldoa6 {
 		pm8937_l6: regulator-l6 {
