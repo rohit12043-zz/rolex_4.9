@@ -155,7 +155,6 @@
 			};
 		};
 
-
 		i2c_2 {
 			i2c_2_sleep: i2c_2_sleep {
 				config {
