@@ -246,12 +246,8 @@ gpio-leds {
 	chan@13 {
 		label = "mpp4";
 		reg = <0x13>;
-		qcom,decimation = <0>;
-		qcom,pre-div-channel-scaling = <0>;
 		qcom,calibration-type = "absolute";
 		qcom,scale-function = <0>;
-		qcom,hw-settle-time = <2>;
-		qcom,fast-avg-setup = <0>;
 	};
 };
 
