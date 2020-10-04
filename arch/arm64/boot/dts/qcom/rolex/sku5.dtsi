@@ -5,20 +5,15 @@
 	interrupt-names = "core_irq", "async_irq", "phy_irq";
 	vbus_otg-supply = <&smb358_otg_vreg>;
     extcon = <&smb358_otg_vreg>;
-	qcom,hsusb-otg-phy-init-seq =
-		<0x39 0x81 0x37 0x82 0xffffffff>;
+	qcom,hsusb-otg-phy-init-seq = <0x39 0x81 0x37 0x82 0xffffffff>;
 };
 
 &pm8937_vadc{
 	chan@13 {
 		label = "mpp4";
 		reg = <0x13>;
-		qcom,decimation = <0>;
-		qcom,pre-div-channel-scaling = <0>;
 		qcom,calibration-type = "absolute";
 		qcom,scale-function = <0>;
-		qcom,hw-settle-time = <2>;
-		qcom,fast-avg-setup = <0>;
 	};
 };
 
