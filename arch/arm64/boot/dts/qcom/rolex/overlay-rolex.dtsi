@@ -6,7 +6,7 @@
 #include "regulator.dtsi"
 #include "mdss.dtsi"
 #include "i2c.dtsi"
-#include "rolex-pm.dtsi"
+#include "pm.dtsi"
 #include "rolex-general.dtsi"
 #include "sku5.dtsi"
 #include "spmi.dtsi"
