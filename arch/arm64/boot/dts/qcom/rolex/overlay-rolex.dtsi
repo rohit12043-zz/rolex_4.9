@@ -2,7 +2,7 @@
 #include "pinctrl.dtsi"
 #include "pinctrl-cam.dtsi"
 #include "cam-sensor.dtsi"
-#include "cam-qrd.dtsi"
+#include "camera-qrd.dtsi"
 #include "regulator.dtsi"
 #include "mdss.dtsi"
 #include "i2c.dtsi"
