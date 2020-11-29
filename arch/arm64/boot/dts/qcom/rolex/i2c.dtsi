@@ -255,3 +255,4 @@ gpio-leds {
 		compatible = "qcom,camera-flash";
 		qcom,flash-type = <1>;
 	};
+};
