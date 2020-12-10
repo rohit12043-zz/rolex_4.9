@@ -2,7 +2,7 @@
 
 echo "Cloning dependencies"
 
-git clone --depth=1 https://github.com/rohit12043/rolex_4.9 -b rolex-4.9 kernel 
+git clone --depth=1 https://github.com/rohit12043/rolex_4.9 -b rework kernel
 cd kernel
 git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9.git -b lineage-17.1 gcc-64 --depth=1
 git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9.git -b lineage-17.1 gcc-32 --depth=1
