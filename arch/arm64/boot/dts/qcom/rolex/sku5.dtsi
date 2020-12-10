@@ -41,20 +41,19 @@
 	};
 };
 
-	&pm8937_pwm {
+&pm8937_pwm {
 	status = "ok";
 	compatible = "qcom,pwm-lpg";
 	reg = <0xbc00 0x100>;
 	reg-names = "lpg-base";
 	#pwm-cells = <2>;
-    }
+};
 
 / {
 qrd_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
 		qcom,rpull-up-kohm = <68>;
 		qcom,vref-batt-therm = <1800000>;
-
 		#include "batterydata-wingtech-feimaotui_SONY-4v4-3030mah.dtsi"
 		#include "batterydata-wingtech-xingwangda_ATL-4v4-3030mah.dtsi"
 
