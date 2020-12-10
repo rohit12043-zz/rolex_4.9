@@ -204,54 +204,30 @@ gpio-leds {
 		pinctrl-names = "default";
 		pinctrl-0 = <&smb_int_default>;
 		qcom,irq-gpio = <&tlmm 61 0x0>;
-		qcom,battid-gpio = <&pm8937_gpios 5 0>;
 		qcom,float-voltage-mv = <4400>;
 		qcom,recharge-mv = <50>;
-        qcom,battery-data = <&qrd_batterydata>;
 		regulator-name = "smb358_otg_vreg";
-		qcom,thermal-mitigation = <1500 1000 700 700>;
-		qcom,fastchg-current-max-ma = <1500>;
 		qcom,bms-psy-name = "bms";
-
-		qcom,bms-controlled-charging;
-		qcom,chg-inhibit-disabled;
+		qcom,chg-inhibit-disabled;	
 		qcom,chg-vadc = <&pm8937_vadc>;
-		qcom,chg-adc_tm = <&pm8937_adc_tm>;
-		qcom,using-pmic-therm;
-		qcom,bat-present-decidegc = <(300)>;
-		qcom,disable-apsd;
-/*
- * Below properties are used for enable JEITA
- */
-		qcom,hot-bat-decidegc = <600>;
-		qcom,warm-bat-decidegc = <450>;
-		qcom,cool-bat-decidegc = <100>;
-		qcom,cold-bat-decidegc = <0>;
-		qcom,warm-bat-ma = <600>;
-
-		qcom,cool-normal-bat-ma = <600>;
-		qcom,cool-cold-bat-ma = <300>;
 		qcom,iterm-ma = <150>;
-		qcom,warm-bat-mv = <4100>;
-		qcom,cool-bat-mv = <4400>;
-
-		qcom,battery-fcc = <3030>;
 		status = "ok";
 	};
+
 	cw2015: cw2015@62 {
 		compatible = "cellwise,cw2015";
 		reg = <0x62>;
 		vdd-supply = <&pm8937_l17>;
 		vcc_i2c-supply = <&pm8937_l5>;
 		interrupt-parent = <&tlmm>;
-        qcom,battery-data = <&qrd_batterydata>;
 		interrupts = <86 8>;
-		cw2015,irq-gpio=<86>;
 	};
 };
+
 &soc {
 	led_flash0: qcom,camera-flash {
 		cell-index = <0>;
 		compatible = "qcom,camera-flash";
 		qcom,flash-type = <1>;
 	};
+}; 
